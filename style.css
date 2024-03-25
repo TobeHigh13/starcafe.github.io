@@ -115,7 +115,7 @@ header {
     transition: 0.3s;
 }
 
-/* .move.line1 {
+.move.line1 {
     transform: rotate(-45deg) translate(-5px, 5px);
 }
 
@@ -125,7 +125,7 @@ header {
 
 .move.line3 {
     transform: rotate(-45deg) translate(-5px, -5px);
-} */
+}
 
 
 
@@ -699,5 +699,37 @@ header {
     .nav-link {
         display: block;
         margin: 1rem 0;
+    }
+}
+@media (max-width: 500px) {
+    .heading h2 br  {
+        display: contents;
+    }
+    .services-content{
+        justify-content: center;
+    }
+    .product-content{
+        grid-template-columns: 1 fr;
+        padding: 20px;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width:380px){
+    .services-content{
+        grid-template-columns: repeat(auto-fit, minmax(auto,140px));
+    
+    }
+    .ser-box img{
+        width: 80px;
+        height: 80px;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+    .heading h2,
+    .book-data h2 {
+        font-size: 1.4rem;
     }
 }
